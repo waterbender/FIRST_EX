@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Product.h"
 #import "Product+CoreDataProperties.h"
+#import "MainViewController.h"
 
 @protocol ReloadViewDelegate <NSObject>
 
@@ -18,7 +19,7 @@
 
 @interface NewSellViewController : UIViewController
 
-@property (strong, nonatomic) NSObject* delegate;
+@property (strong, nonatomic) MainViewController* delegate;
 @property (strong, nonatomic) Product* product;
 
 @end

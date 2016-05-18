@@ -162,6 +162,8 @@
         [self.imagesArray addObject:[UIImage imageNamed:@"photo"]];
     }
     
+    self.delegate.fetchedResultsController = nil;
+    
     NSData *arrayData = [NSKeyedArchiver archivedDataWithRootObject:self.imagesArray];
     
     if (self.product) {
@@ -183,14 +185,11 @@
         [infoDict setObject:[NSNumber numberWithDouble:self.priceTextField.text.doubleValue] forKey:@"price"];
         
         [dataManager setNewDictProductIntoDB:infoDict];
+        [dataManager saveContext];
         
     }
     
-    [[DataManager sharedManager] saveContext];
-    
-    if([self.delegate respondsToSelector:@selector(reloadFirstPageView)]) {
-        [self.delegate performSelector:@selector(reloadFirstPageView) withObject:nil];
-    }
+    [self.delegate performSelector:@selector(reloadFirstPageView) withObject:nil];
 
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -254,6 +253,8 @@
         CGRect frame = textView.frame;
         CGRect newFrame = CGRectMake(CGRectGetMinX(frame), CGRectGetMinY(self.previousRect), CGRectGetWidth(frame), CGRectGetHeight(frame));
         textView.frame = newFrame;
-    }];}
+    }];
+
+}
 
 @end

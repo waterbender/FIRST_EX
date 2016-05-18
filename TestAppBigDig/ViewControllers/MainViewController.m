@@ -250,11 +250,6 @@
 
 #pragma mark - Fetched results controller
 
-//- (NSFetchedResultsController *)fetchedResultsController
-//{
-//    return nil;
-//}
-
 - (void)controllerWillChangeContent:(NSFetchedResultsController *)controller
 {
     [self.tableView beginUpdates];
@@ -356,7 +351,8 @@
 
 -(void) reloadFirstPageView {
     
-    self.fetchedResultsController = nil;
+    _fetchedResultsController = nil;
+    
     [self.tableView reloadData];
 }
 

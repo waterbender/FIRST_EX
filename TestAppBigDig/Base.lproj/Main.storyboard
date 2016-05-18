@@ -74,7 +74,7 @@
                                                                 <constraint firstAttribute="width" constant="32" id="vgD-zV-5ib"/>
                                                             </constraints>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <state key="normal" image="trashIcon" backgroundImage="9AD23C1C-8F8F-412F-B486-04376BBE7C38"/>
+                                                            <state key="normal" image="trashIcon" backgroundImage="5D305C7B-ADB4-46EB-8AE6-AE2C6F9AD335"/>
                                                             <connections>
                                                                 <action selector="deleteAction:" destination="BMa-k6-OYG" eventType="touchUpInside" id="voj-J7-dtc"/>
                                                             </connections>
@@ -544,7 +544,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="9AD23C1C-8F8F-412F-B486-04376BBE7C38" width="98" height="153">
+        <image name="5D305C7B-ADB4-46EB-8AE6-AE2C6F9AD335" width="98" height="153">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOjtYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
 GxwgISgrLjQ3VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA

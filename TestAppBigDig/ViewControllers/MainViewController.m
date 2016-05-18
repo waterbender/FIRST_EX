@@ -356,7 +356,7 @@
 
 -(void) reloadFirstPageView {
     
-    _fetchedResultsController = nil;
+    self.fetchedResultsController = nil;
     [self.tableView reloadData];
 }
 

@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  ImageCell.m
 //  TestAppBigDig
 //
 //  Created by  ZHEKA on 17.05.16.
 //  Copyright © 2016  ZHEKA. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ImageCell.h"
 
-@interface ViewController : UIViewController
-
+@implementation ImageCell
 
 @end
-

@@ -168,15 +168,13 @@
     if (self.indexPath.row == indexPath.row && indexPath.section == indexPath.section) {
         self.indexPath = [NSIndexPath indexPathForRow:-1 inSection:-1];
     } else {
-        
+
         self.indexPath = indexPath;
     }
     
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    NSIndexPath* rowToReload = [NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section];
-    NSArray* rowsToReload = [NSArray arrayWithObjects:rowToReload, nil];
-    [self.tableView reloadRowsAtIndexPaths:rowsToReload withRowAnimation:UITableViewRowAnimationAutomatic];
+    [self.tableView reloadData];
     
 
 }
